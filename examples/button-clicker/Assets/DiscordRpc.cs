@@ -91,9 +91,9 @@ public class DiscordRpc
     public static extern void UpdateHandlers(ref EventHandlers handlers);
 
 
-    public static void Initialize(string applicationId, ref EventHandlers handlers, bool autoRegister, string optionalSteamId)
+    public static void Initialize(string applicationId, ref EventHandlers handlers, bool autoRegister, string optionalSteamId, int pipe = 0)
     {
-        Initialize(applicationId, ref handlers, autoRegister, optionalSteamId, 0);
+        Initialize(applicationId, ref handlers, autoRegister, optionalSteamId, pipe);
     }
     public static void UpdatePresence(RichPresence presence)
     {
